@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Forecast Report</title>
+    <link rel="stylesheet" href="wheather.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&family=Roboto:ital@1&display=swap" rel="stylesheet">
+
+
+</head>
+<body>
+<div>
+<img src="cloud1.png" alt="coud" height="50px" width="80px" class="moving-image">
+<img src="cloud1.png" alt="coud" height="50px" width="80px" class="moving-image">
+<img src="cloud1.png" alt="coud" height="50px" width="80px" class="moving-image">
+<img src="cloud1.png" alt="coud" height="50px" width="80px" class="moving-image">
+<img src="cloud1.png" alt="coud" height="50px" width="80px" class="moving-image">
+<img src="cloud1.png" alt="coud" height="50px" width="80px" class="moving-image">
+<img src="cloud1.png" alt="coud" height="50px" width="80px" class="moving-image">
+<img src="cloud1.png" alt="coud" height="50px" width="80px" class="moving-image">
+<img src="cloud1.png" alt="coud" height="50px" width="80px" class="moving-image">
+<img src="cloud1.png" alt="coud" height="50px" width="80px" class="moving-image">
+<img src="cloud1.png" alt="coud" height="50px" width="80px" class="moving-image">
+<img src="cloud1.png" alt="coud" height="50px" width="80px" class="moving-image">
+</div>
+
+<div class="container">
+<div class=locanddate>
+<span class="loc">Location: Delhi</span>
+</div>
+<hr>
+<span class="deg">22°</span>
+<span class="desc"> Rainy </span>
+<hr>
+<img src="windspeed.png" alt="windspeed" onclick="func1()">
+<img src="humidity.png" alt="humidity"onclick="func2()">
+<img src="uvindex.png" width="50px" height="50px" alt="windspeed" onclick="func3()">
+<div class="days">
+<span class="data">🔄 Loading... Fetching data.</span>
+</div>
+</div>
+<span class="me"><em>~Srishti</em></spam>
+
+<script>
+function func1()
+{
+	document.querySelectorAll('span')[3].innerHTML="Wind-Speed";
+}
+function func2()
+{
+	document.querySelectorAll('span')[3].innerHTML="Precipitation";
+}
+function func3()
+{
+	document.querySelectorAll('span')[3].innerHTML="UV-index";
+}
+		
+</script>
+
+</body>
+</html>
