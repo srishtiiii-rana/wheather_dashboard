@@ -1,0 +1,220 @@
+html, body {
+    height: 100%; /* Ensure html and body elements take up the entire viewport */
+    margin: 0; /* Remove default margin */
+}
+
+body {
+    background: linear-gradient(180deg, #E6E6FA, #B0C4DE, #5579C6, #4864b2);
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow:hidden;
+}
+
+.me{
+	position:absolute;
+	bottom:15px;
+	font-size:18px;
+	left:48%;
+	color:#E5F3FD;
+}
+
+@keyframes moveLinear {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(100vw); }
+}
+
+.moving-image:nth-child(1) {
+	position:absolute;
+    top: 10%; /* Adjust as needed */
+    left: 60%;
+    animation: moveLinear 400s linear infinite ; /* Adjust duration and timing function */
+}
+
+.moving-image:nth-child(2) {
+	position:absolute;
+    top: 10%; /* Adjust as needed */
+    left: 0;
+    animation: moveLinear 400s linear infinite; /* Adjust duration and timing function */
+}
+
+.moving-image:nth-child(3) {
+	position:absolute;
+    top: 30%; /* Adjust as needed */
+    left: 40%;
+    animation: moveLinear 400s linear infinite; /* Adjust duration and timing function */
+}
+
+.moving-image:nth-child(4) {
+	position:absolute;
+    top: 40%; /* Adjust as needed */
+    left: 20%;
+    animation: moveLinear 400s linear infinite; /* Adjust duration and timing function */
+}
+
+.moving-image:nth-child(5) {
+	position:absolute;
+    top: 40%; /* Adjust as needed */
+    left: 50%;
+    animation: moveLinear 400s linear infinite; /* Adjust duration and timing function */
+}
+
+.moving-image:nth-child(6) {
+	position:absolute;
+    top: 80%; /* Adjust as needed */
+    left: 90%;
+    animation: moveLinear 400s linear infinite; /* Adjust duration and timing function */
+}
+
+.moving-image:nth-child(7) {
+	position:absolute;
+    top: 50%; /* Adjust as needed */
+    left: 6%;
+    animation: moveLinear 400s linear infinite; /* Adjust duration and timing function */
+}
+
+.moving-image:nth-child(8) {
+	position:absolute;
+    top: 90%; /* Adjust as needed */
+    left: 30%;
+    animation: moveLinear 400s linear infinite; /* Adjust duration and timing function */
+}
+
+.moving-image:nth-child(9) {
+	position:absolute;
+    top: 90%; /* Adjust as needed */
+    left: 80%;
+    animation: moveLinear 400s linear infinite; /* Adjust duration and timing function */
+}
+
+.moving-image:nth-child(10) {
+	position:absolute;
+    top: 70%; /* Adjust as needed */
+    left: 16%;
+    animation: moveLinear 400s linear infinite; /* Adjust duration and timing function */
+}
+
+.moving-image:nth-child(11) {
+	position:absolute;
+    top: 40%; /* Adjust as needed */
+    left: 80%;
+    animation: moveLinear 400s linear infinite; /* Adjust duration and timing function */
+}
+
+.moving-image:nth-child(12) {
+	position:absolute;
+    top: 80%; /* Adjust as needed */
+    left: 55%;
+    animation: moveLinear 400s linear infinite; /* Adjust duration and timing function */
+}
+
+.container{
+	position:absolute;
+	border:1px solid white;
+	border-radius:14px;
+	box-shadow:5px 5px 2px 0px #B0C4DE;
+	background:white;
+	opacity:0.5;
+	z-index:100;
+	width:350px;
+	height:500px;
+	margin-top:55px;
+	left:50%;
+	transform: translateX(-50%);
+	padding:2px 2px 2px 2px;
+}
+
+.deg{
+	display:block;
+	color:#1D1BF9;
+	font-size:150px;
+	text-align:center;
+	z-index:100;
+	font-weight:bold;
+	font-family: "Roboto", sans-serif;
+  	font-style: italic;
+}
+
+.loc{
+	text-align:center;
+	display:block;
+	color:#1D1BF9;
+	font-size:25px;
+	z-index:100;
+	font-family: "Roboto", sans-serif;
+  	font-style: italic;
+	font-weight:bold;
+}
+
+.date{
+
+	display:inline;
+	color:#1D1BF9;
+	font-size:15px;
+	text-align:center;
+	z-index:100;
+	font-family: "Roboto", sans-serif;
+  	font-style: italic;
+	font-weight:bold;
+}
+
+
+hr{
+	border-color:#1D1BF9;
+	border-width:1px;
+	width:300px;
+}
+.desc{
+	position:absolute;
+	display:block;
+	color:#1D1BF9;
+	font-size:25px;
+	text-align:center;
+	z-index:101;
+	font-family: "Roboto", sans-serif;
+  	font-style: italic;
+	font-weight:bold;
+	top:193px;
+	left:10%;
+}
+		
+.container img{
+	display:block;
+	margin-left:32px;
+	padding:10px;
+	border:1px solid #1D1BF9;
+	border-radius:5px;
+}
+
+.container img:hover{
+
+	width:60px;
+	height:60px;
+	cursor:pointer;
+	border-radius:8px;
+	box-shadow:1px 2px 2px #1D1BF9; 
+}
+
+.days{
+	position:absolute;
+	display:block;
+	border:1px solid #1D1BF9;
+	width:180px;
+	height:215px;
+	left:140px;
+	top:250px;
+	z-index:101;
+	border-radius:5px;
+}
+
+.data{
+	display:block;
+	color:#1D1BF9;
+	font-size:20px;
+	text-align:center;
+	z-index:101;
+	font-family: "Roboto", sans-serif;
+  	font-style: italic;
+	font-weight:bold;
+}
+
+
