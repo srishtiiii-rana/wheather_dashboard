@@ -30,11 +30,11 @@
 
 <div class="container">
 <div class=locanddate>
-<span class="loc">Location: Delhi</span>
+<span class="loc">Location: </span>
 </div>
 <hr>
-<span class="deg">22°</span>
-<span class="desc"> Rainy </span>
+<span class="deg">- -</span>
+<span class="desc">- -</span>
 <hr>
 <img src="windspeed.png" alt="windspeed" onclick="func1()">
 <img src="humidity.png" alt="humidity"onclick="func2()">
@@ -62,7 +62,6 @@ document.querySelector(".loc").innerHTML="Location: "+data.name;
 document.querySelector(".desc").innerHTML=data.weather[0].description;
 
 }
-
 
 function func1()
 {	
