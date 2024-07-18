@@ -217,4 +217,19 @@ hr{
 	font-weight:bold;
 }
 
+.descript{
+	color:#1D1BF9;
+	font-family: "Roboto", sans-serif;
+	display:flex;
+	justify-content:center;
+	font-size:25px;
+	font-style:italic;
+	font-weight:bold;
+
+}
+
+.over-descript{
+	border:0px solid transparent;
+
+	background-color:#B0C4DE}
 
