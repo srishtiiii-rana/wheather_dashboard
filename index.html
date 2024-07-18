@@ -36,11 +36,13 @@
 <span class="deg">- -</span>
 <span class="desc">- -</span>
 <hr>
-<img src="windspeed.png" alt="windspeed" onclick="func1()">
-<img src="humidity.png" alt="humidity"onclick="func2()">
-<img src="uvindex.png" width="50px" height="50px" alt="windspeed" onclick="func3()">
+<img src="windspeed.png" alt="windspeed" class="one">
+<img src="humidity.png" alt="humidity"class="two">
+<img src="uvindex.png" width="50px" height="50px" alt="windspeed" class="three">
 <div class="days">
 <span class="data">🔄 Loading... Fetching data.</span>
+<br>
+<div class="over-descript"><span class="descript"> </span></div>
 </div>
 </div>
 <span class="me"><em>~Srishti</em></spam>
@@ -48,38 +50,47 @@
 <script>
 
 const apikey="9f980d91054ddd5b183284fc1355f730";
-const apiurl="https://api.openweathermap.org/data/2.5/weather?q=pune&units=metric";	
+const apiurl="https://api.openweathermap.org/data/2.5/weather?q=delhi&units=metric";	
 
 
 async function checkWheather()
 {
-const response=await fetch(apiurl + `&appid=${apikey}`);
-var data =await response.json();
+const response= await fetch(apiurl + `&appid=${apikey}`);
+var data = await response.json();
 
 console.log(data);
 document.querySelector(".deg").innerHTML=Math.round(data.main.temp) +"°";
 document.querySelector(".loc").innerHTML="Location: "+data.name;
 document.querySelector(".desc").innerHTML=data.weather[0].description;
 
-}
 
-function func1()
-{	
+
+	document.querySelector(".one").addEventListener('click',function()
+	{
 	document.querySelectorAll('span')[3].innerHTML="Wind-Speed";
-	document.querySelectorAll(".descript").innerHTML=data.main.humidity;
-}
-function func2()
-{
+
+	document.querySelector(".descript").innerHTML=data.wind.speed+" m/s";
+	});
+
+
+	
+	document.querySelector(".two").addEventListener('click',function()
+	{
 	document.querySelectorAll('span')[3].innerHTML="Humidity";
-	document.querySelectorAll(".descript").innerHTML=data.main.humidity;
+	document.querySelector(".descript").innerHTML=data.main.humidity+"%";
+	});
+
+	
+	document.querySelector(".three").addEventListener('click',function()
+	{
+	document.querySelectorAll('span')[3].innerHTML="Feels like";
+	document.querySelector(".descript").innerHTML=data.main.feels_like+" °C";
+	});
+
 
 }
-function func3()
-{
-	document.querySelectorAll('span')[3].innerHTML="Min/max temperature";
-	document.querySelectorAll(".descript").innerHTML=data.main.temp_min;
-	document.querySelectorAll('span')[4].innerHTML=`data.main.temp_max`;
-}
+
+checkWheather();
 		
 </script>
 
